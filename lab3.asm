@@ -1,0 +1,23 @@
+ORG 0x0000
+MOV A, #0
+MOV B, #1
+
+MOV R0, #10
+MOV R1, #5
+
+ADD A, R0
+MOV R2, A
+
+SUBB A, R1
+MOV R2, A
+
+MOV B, #2
+MUL AB
+MOV R2, A
+
+DIV AB
+MOV R2, A
+
+HERE:
+	SJMP HERE
+END
